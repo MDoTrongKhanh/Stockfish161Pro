@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "main"
+      - "master"
     paths:
       - "lichess-bot.py"
   schedule:
@@ -22,7 +22,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -36,5 +36,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo ${{ secrets.LICHESS_KEY }} > key.txt 
-          chmod +x ./engines/stockfish-ubuntu-x86-64-sse41-popcnt
+          chmod +x ./engines/stockfish
           python3 lichess-bot.py
