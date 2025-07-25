@@ -36,5 +36,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo ${{ secrets.LICHESS_KEY }} > key.txt 
-          chmod +x ./engines/stockfish
+          chmod +x ./engines/NeuralEdge
           python3 lichess-bot.py
