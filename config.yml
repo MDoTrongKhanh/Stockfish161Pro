@@ -1,5 +1,5 @@
 token: "NotHere"                   # Lichess OAuth2 Token.
-url: "https://lichess.org/"        # Lichess base URL.
+url: "https://lishogi.org/"        # Lichess base URL.
 
 engine:                            # Engine settings.
   dir: "./engines/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
@@ -235,3 +235,4 @@ matchmaking:
 #     challenge_mode: casual
 #
 # The following configurations cannot be overridden: allow_matchmaking, challenge_timeout, challenge_filter and block_list.
+
